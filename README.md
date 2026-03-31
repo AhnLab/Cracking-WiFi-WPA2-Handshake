@@ -1,4 +1,5 @@
-GPG Encryption
+
+|GPG Encryption|
 <br>
 gpg -c filename.txt         "For Encryption"
 <br>
